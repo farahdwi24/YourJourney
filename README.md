@@ -21,6 +21,7 @@ Aplikasi YourJourney adalah sebuah aplikasi mobile yang dirancang berdasarkan wi
 
 2. **Halaman Utama**:
    - Setelah login, pengguna akan diarahkan ke halaman utama yang menampilkan ikon daftar kategori seperti hotel, kuliner, tempat ibadah, dan destinasi wisata.
+   - Pengguna juga dapat mencari berdasarkan nama dari setiap kategori
    - Ikon tersebut dapat ditekan untuk melihat daftar dari setiap kategori atau informasi tempat-tempat menarik yang dipilih.
    - Pengguna dapat menekan tombol navigasi di bagian bawah layar untuk beralih antara halaman utama, profil pengguna, dan lainnya.
 
