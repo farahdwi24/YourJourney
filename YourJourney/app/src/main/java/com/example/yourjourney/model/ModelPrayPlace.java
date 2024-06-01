@@ -7,6 +7,8 @@ import java.io.Serializable;
 
 public class ModelPrayPlace implements Serializable {
     public LatLng center;
+    @SerializedName("id")
+    private String id;
     @SerializedName("nama")
     private String txtTempatIbadah;
     @SerializedName("latitude")
@@ -36,5 +38,13 @@ public class ModelPrayPlace implements Serializable {
 
     public void setLongitude(double longitude) {
         this.longitude = longitude;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }

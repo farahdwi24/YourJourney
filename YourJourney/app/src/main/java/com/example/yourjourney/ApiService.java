@@ -1,8 +1,12 @@
 package com.example.yourjourney;
 
 
+import com.example.yourjourney.model.ModelHotel;
 import com.example.yourjourney.model.ModelKuliner;
+import com.example.yourjourney.model.ModelPrayPlace;
 import com.example.yourjourney.model.ModelWisata;
+
+import java.util.List;
 
 import retrofit2.Call;
 import retrofit2.http.GET;
@@ -25,6 +29,18 @@ public interface ApiService {
     Call<YourResponse> getHotel();
     @GET("tempatibadah")
     Call<YourResponse> getPrayPlace();
+
+//    @GET("hotel")
+//    Call<List<ModelHotel>> getHotels();
+//
+//    @GET("kuliner")
+//    Call<List<ModelKuliner>> getKuliners();
+//
+//    @GET("prayplace")
+//    Call<List<ModelPrayPlace>> getPrayPlaces();
+//
+//    @GET("wisatas")
+//    Call<List<ModelWisata>> getWisatas();
 
 
 }

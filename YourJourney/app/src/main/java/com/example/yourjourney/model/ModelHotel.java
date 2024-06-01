@@ -5,6 +5,8 @@ import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
 
 public class ModelHotel implements Serializable {
+    @SerializedName("id")
+    private String id;
     @SerializedName("nama")
     private String txtNamaHotel;
     @SerializedName("alamat")
@@ -54,5 +56,13 @@ public class ModelHotel implements Serializable {
 
     public void setGambarHotel(String gambarHotel) {
         this.GambarHotel = gambarHotel;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 }
