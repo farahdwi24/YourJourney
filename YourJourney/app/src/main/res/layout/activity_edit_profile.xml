@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activties.EditProfileActivity"
+    android:background="@color/white">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_edit"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:titleTextAppearance="@style/Toolbar.TitleText" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:id="@+id/edit_name"
+        android:paddingVertical="30dp"
+        android:layout_marginHorizontal="30dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:id="@+id/edit_email"
+        android:paddingVertical="30dp"
+        android:layout_marginHorizontal="30dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:id="@+id/edit_username"
+        android:paddingVertical="30dp"
+        android:layout_marginHorizontal="30dp"/>
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:id="@+id/edit_password"
+        android:inputType="textPassword"
+        android:paddingVertical="30dp"
+        android:layout_marginHorizontal="30dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="UPDATE"
+        android:id="@+id/btn_update"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="30dp"/>
+
+
+</LinearLayout>
