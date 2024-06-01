@@ -170,6 +170,7 @@ public class HomeFragment extends Fragment {
                 Toast.makeText(getActivity(), "Failed to load hotels", Toast.LENGTH_SHORT).show();
             }
         });
+
         apiService.getKuliner().enqueue(new Callback<YourResponse>() {
             @Override
             public void onResponse(Call<YourResponse> call, Response<YourResponse> response) {
@@ -183,6 +184,7 @@ public class HomeFragment extends Fragment {
                 Toast.makeText(getActivity(), "Failed to load kuliner", Toast.LENGTH_SHORT).show();
             }
         });
+
         apiService.getPrayPlace().enqueue(new Callback<YourResponse>() {
             @Override
             public void onResponse(Call<YourResponse> call, Response<YourResponse> response) {

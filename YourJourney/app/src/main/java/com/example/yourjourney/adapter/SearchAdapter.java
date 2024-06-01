@@ -46,6 +46,7 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.ViewHolder
         if (result instanceof ModelHotel) {
             ModelHotel hotel = (ModelHotel) result;
             holder.title.setText(hotel.getTxtNamaHotel());
+            holder.kategori.setText("Hotel");
             holder.itemView.setOnClickListener(v -> {
                 Intent intent = new Intent(context, DetailHotelActivity.class);
                 intent.putExtra("detailHotel", hotel);
@@ -54,6 +55,7 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.ViewHolder
         } else if (result instanceof ModelKuliner) {
             ModelKuliner kuliner = (ModelKuliner) result;
             holder.title.setText(kuliner.getTxtNamaKuliner());
+            holder.kategori.setText("Kuliner");
             holder.itemView.setOnClickListener(v -> {
                 Intent intent = new Intent(context, DetailKulinerActivity.class);
                 intent.putExtra("detailKuliner", kuliner);
@@ -62,6 +64,7 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.ViewHolder
         } else if (result instanceof ModelPrayPlace) {
             ModelPrayPlace prayPlace = (ModelPrayPlace) result;
             holder.title.setText(prayPlace.getTxtTempatIbadah());
+            holder.kategori.setText("Tempat ibadah");
             holder.itemView.setOnClickListener(v -> {
                 Intent intent = new Intent(context, PrayPlaceActivity.class);
                 intent.putExtra("id", prayPlace);
@@ -70,6 +73,7 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.ViewHolder
         } else if (result instanceof ModelWisata) {
             ModelWisata wisata = (ModelWisata) result;
             holder.title.setText(wisata.getTxtNamaWisata());
+            holder.kategori.setText("Wisata");
             holder.itemView.setOnClickListener(v -> {
                 Intent intent = new Intent(context, DetailWisataActivity.class);
                 intent.putExtra("detailWisata", wisata);
@@ -84,11 +88,12 @@ public class SearchAdapter extends RecyclerView.Adapter<SearchAdapter.ViewHolder
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView title;
+        TextView title, kategori;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.title);
+            kategori =itemView.findViewById(R.id.kategori);
         }
     }
 }

@@ -30,17 +30,5 @@ public interface ApiService {
     @GET("tempatibadah")
     Call<YourResponse> getPrayPlace();
 
-//    @GET("hotel")
-//    Call<List<ModelHotel>> getHotels();
-//
-//    @GET("kuliner")
-//    Call<List<ModelKuliner>> getKuliners();
-//
-//    @GET("prayplace")
-//    Call<List<ModelPrayPlace>> getPrayPlaces();
-//
-//    @GET("wisatas")
-//    Call<List<ModelWisata>> getWisatas();
-
 
 }

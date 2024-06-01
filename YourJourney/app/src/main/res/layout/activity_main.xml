@@ -15,10 +15,10 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="45dp"
         android:layout_alignParentBottom="true"
         android:orientation="horizontal"
-        android:layout_marginHorizontal="30dp">
+        android:gravity="center">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -27,7 +27,7 @@
         android:background="@color/white"
         app:itemBackground="@drawable/background_shape"
         app:menu="@menu/menu"
-        app:itemIconSize="30dp"/>
+        app:itemIconSize="25dp"/>
 
     </LinearLayout>
 </RelativeLayout>
